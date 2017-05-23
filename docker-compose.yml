@@ -9,7 +9,6 @@ services:
       - "22:22" # ssh
     volumes:
       - ./../:/apps # all apps
-      - ~/.ssh:/home/homestead/.ssh # Ssh keys for easy deployment inside the container
     links:
       - mariadb
       - mongodb
